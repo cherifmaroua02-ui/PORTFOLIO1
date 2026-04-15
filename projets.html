@@ -70,15 +70,14 @@ En analysant le fonctionnement existant, j’ai identifié que le débit était 
 <p>
 L’implémentation a été réalisée sur l’automate <strong>Siemens S7-1500</strong> via <strong>TIA Portal</strong>, en utilisant le bloc <strong>PID Compact</strong>, dédié aux applications de régulation industrielle. J’ai assuré :
 </p>
-
+            
 <ul>
-  <li>La <strong>configuration du régulateur PID</strong> (entrée process, consigne, sortie de commande)</li>
-  <li>L’intégration dans le programme automate avec des logiques en <strong>FBD</strong></li>
-  <li>La mise en place des <strong>modes de fonctionnement</strong> (manuel / automatique)</li>
-  <li>Le paramétrage initial des gains (<strong>Kp, Ki, Kd</strong>) et leur <strong>ajustement (tuning)</strong> pour garantir la stabilité</li>
-  <li>La gestion des <strong>limitations</strong>, <strong>anti-windup</strong> et sécurités associées</li>
+  <li>✔️ <strong>Configuration du régulateur PID</strong> (entrée process, consigne, sortie de commande)</li>
+  <li>✔️ Intégration dans le programme automate en <strong>FBD</strong></li>
+  <li>✔️ Mise en place des <strong>modes de fonctionnement</strong> (manuel / automatique)</li>
+  <li>✔️ Paramétrage des gains (<strong>Kp, Ki, Kd</strong>) et <strong>tuning</strong></li>
+  <li>✔️ Gestion des <strong>limitations</strong>, <strong>anti-windup</strong> et sécurités</li>
 </ul>
-
 <p>
 Le système permet désormais un <strong>contrôle dynamique et précis du débit</strong>, assurant une <strong>protection optimale des puits</strong>, une <strong>réduction des risques de surdosage ou sous-dosage</strong>, et une <strong>amélioration de l’efficacité du procédé</strong>.
 </p>
