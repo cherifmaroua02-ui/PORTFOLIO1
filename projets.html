@@ -59,9 +59,33 @@ Ce projet a abouti à une solution fiable, sécurisée et adaptée aux environne
         <section id="api">
             <h2 class="text-4xl font-bold mb-4">API de Traitement</h2>
             <p class="text-neutral-300 text-lg">
-                Description complète :  
-                Conception d’une API microservices capable de traiter plus de 10 millions de requêtes par jour,
-                avec cache Redis, base PostgreSQL et architecture GraphQL.
+               <p>
+Dans la continuité du projet SCADA, j’ai proposé et réalisé l’<strong>intégration et l’optimisation d’un régulateur PID</strong> pour le <strong>contrôle du débit d’injection d’inhibiteur de corrosion</strong>, un paramètre critique pour la protection des puits de gaz.
+</p>
+
+<p>
+En analysant le fonctionnement existant, j’ai identifié que le débit était maintenu constant, sans régulation, ce qui pouvait entraîner une <strong>dégradation des équipements</strong> et une <strong>inefficacité du traitement</strong>. J’ai donc initié une étude visant à mettre en place une <strong>régulation automatique en boucle fermée</strong> afin d’adapter le débit en fonction des conditions process.
+</p>
+
+<p>
+L’implémentation a été réalisée sur l’automate <strong>Siemens S7-1500</strong> via <strong>TIA Portal</strong>, en utilisant le bloc <strong>PID Compact</strong>, dédié aux applications de régulation industrielle. J’ai assuré :
+</p>
+
+<ul>
+  <li>La <strong>configuration du régulateur PID</strong> (entrée process, consigne, sortie de commande)</li>
+  <li>L’intégration dans le programme automate avec des logiques en <strong>FBD</strong></li>
+  <li>La mise en place des <strong>modes de fonctionnement</strong> (manuel / automatique)</li>
+  <li>Le paramétrage initial des gains (<strong>Kp, Ki, Kd</strong>) et leur <strong>ajustement (tuning)</strong> pour garantir la stabilité</li>
+  <li>La gestion des <strong>limitations</strong>, <strong>anti-windup</strong> et sécurités associées</li>
+</ul>
+
+<p>
+Le système permet désormais un <strong>contrôle dynamique et précis du débit</strong>, assurant une <strong>protection optimale des puits</strong>, une <strong>réduction des risques de surdosage ou sous-dosage</strong>, et une <strong>amélioration de l’efficacité du procédé</strong>.
+</p>
+
+<p>
+Ce projet m’a permis de renforcer mes compétences en <strong>régulation industrielle</strong>, en <strong>automatisme avancé</strong>, et en optimisation de <strong>boucles de contrôle PID</strong> dans un environnement réel et critique.
+</p>
             </p>
         </section>
 
