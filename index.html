@@ -54,69 +54,51 @@ body {
     transform: scale(1.02);
 }
 
-.social-link {
-    transition: all 0.3s ease;
-}
-
-.social-link:hover {
-    border-color: #3b82f6;
-    color: #3b82f6;
-}
-
-.btn-primary {
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #2563eb;
-}
-
 html {
     scroll-behavior: smooth;
 }
 </style>
 </head>
 
-<body>
+<body class="bg-white text-black">
 
 <!-- Hero -->
-<section class="min-h-screen flex items-start justify-center px-6 relative">
+<section class="min-h-screen flex items-start justify-center px-6 relative text-black">
 
-<!-- CHANGÉ (fond clair au lieu de sombre invisible) -->
 <div class="absolute inset-0 bg-gradient-to-b from-blue-50/30 to-white"></div>
 
 <div class="max-w-6xl w-full mx-auto px-6 relative z-10 py-20 hero-title flex flex-col md:flex-row items-start justify-between gap-12">
 
 <div class="max-w-2xl">
 
-<p class="text-blue-500 mb-4 tracking-wide">INGÉNIEURE AUTOMATICIENNE</p>
+<p class="text-blue-600 mb-4 tracking-wide">INGÉNIEURE AUTOMATICIENNE</p>
 
 <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight text-black">
 Maroua Cherif
 </h1>
 
-<h2 class="text-lg md:text-xl lg:text-2xl font-normal mb-4 tracking-tight text-gray-700 max-w-2xl">
+<h2 class="text-lg md:text-xl lg:text-2xl font-normal mb-4 tracking-tight text-gray-800 max-w-2xl">
 Ingénieure en automatisme et Informatique Industrielle, là où la rigueur rencontre l’innovation pour donner vie aux systèmes intelligents.
 </h2>
 
-<p class="text-xl md:text-2xl text-gray-700 mb-12">
+<p class="text-xl md:text-2xl text-gray-800 mb-12">
 Mon parcours s’est construit autour de l’analyse et de la maîtrise des systèmes complexes.
-Après des classes préparatoires à l’École Nationale Polytechnique, je me suis spécialisée en automatique et informatique industrielle, attirée par les systèmes intelligents et la commande.
-J’ai ensuite poursuivi un Master à l’Université Paris-Saclay en Systèmes Automatiques Mobiles, où j’ai approfondi la robotique et les systèmes embarqués.
+Après des classes préparatoires à l’École Nationale Polytechnique, je me suis spécialisée en automatique et informatique industrielle.
+J’ai ensuite poursuivi un Master à l’Université Paris-Saclay en Systèmes Automatiques Mobiles.
 </p>
 
-<p class="text-xl md:text-2xl text-gray-700 mb-12">
+<p class="text-xl md:text-2xl text-gray-800 mb-12">
 Aujourd’hui, je souhaite mettre mes compétences au service de projets industriels concrets et innovants.
 </p>
 
-<a href="#contact" class="inline-block bg-blue-500 text-white px-8 py-4 text-lg font-medium btn-primary">
+<a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-4 text-lg font-medium">
 Me contacter
 </a>
 
 </div>
 
 <div class="flex-shrink-0">
-<img src="photos.png" alt="Photo de profil" class="w-80 h-96 object-cover rounded-lg shadow-lg">
+<img src="photos.png" alt="Photo de profil" class="w-80 h-96 object-cover rounded-lg shadow-lg border">
 </div>
 
 </div>
@@ -129,8 +111,8 @@ Me contacter
 
 <div class="fade-in">
 <h2 class="text-5xl md:text-6xl font-bold mb-4 text-black">Projets</h2>
-<p class="text-gray-600 text-lg mb-16 max-w-2xl">
-Sélection de projets techniques démontrant expertise en développement et architecture.
+<p class="text-gray-800 text-lg mb-16 max-w-2xl">
+Sélection de projets techniques démontrant expertise en automatisme et développement.
 </p>
 </div>
 
@@ -142,7 +124,7 @@ Sélection de projets techniques démontrant expertise en développement et arch
 
 <div>
 <img src="https://images.unsplash.com/photo-1763568258752-fe55f4ab7267?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-class="w-full h-64 object-cover project-img">
+class="w-full h-64 object-cover project-img rounded-lg">
 </div>
 
 <div>
@@ -151,19 +133,15 @@ Automatisation d’une station de pompage sous PLC Siemens S7-300
 </h3>
 
 <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">LADDER</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">PLC S7-300</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">Contrôle de niveau</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">Station de pompage</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">LADDER</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">PLC S7-300</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">Contrôle de niveau</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">Station de pompage</span>
 </div>
 
 </div>
 </div>
 </div>
-
-<a href="projets.html#iot" class="inline-block mt-6 text-blue-500 hover:underline">
-Voir plus →
-</a>
 
 <!-- Project 2 -->
 <div class="fade-in project-card">
@@ -171,30 +149,26 @@ Voir plus →
 
 <div class="md:order-2">
 <img src="https://images.unsplash.com/photo-1774620396033-18782cda8242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-class="w-full h-64 object-cover project-img">
+class="w-full h-64 object-cover project-img rounded-lg">
 </div>
 
 <div>
 <h3 class="text-3xl font-bold mb-4 text-black">Optimisation de Pipeline CI/CD</h3>
 
-<p class="text-gray-600 text-lg mb-6">
-Réduction de 65% du temps de déploiement via automatisation et optimisation des containers.
+<p class="text-gray-800 text-lg mb-6">
+Réduction de 65% du temps de déploiement via automatisation.
 </p>
 
 <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">Kubernetes</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">Jenkins</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">Terraform</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">AWS</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">Kubernetes</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">Jenkins</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">Terraform</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">AWS</span>
 </div>
 
 </div>
 </div>
 </div>
-
-<a href="projets.html#cicd" class="inline-block mt-6 text-blue-500 hover:underline">
-Voir plus →
-</a>
 
 <!-- Project 3 -->
 <div class="fade-in project-card">
@@ -202,21 +176,21 @@ Voir plus →
 
 <div>
 <img src="https://images.unsplash.com/photo-1763568258330-039d2f3dfc76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-class="w-full h-64 object-cover project-img">
+class="w-full h-64 object-cover project-img rounded-lg">
 </div>
 
 <div>
 <h3 class="text-3xl font-bold mb-4 text-black">API de Traitement de Données</h3>
 
-<p class="text-gray-600 text-lg mb-6">
-API haute performance gérant 10M+ requêtes/jour avec architecture microservices scalable.
+<p class="text-gray-800 text-lg mb-6">
+API haute performance scalable.
 </p>
 
 <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">Node.js</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">PostgreSQL</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">Redis</span>
-<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm border border-gray-300">GraphQL</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">Node.js</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">PostgreSQL</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">Redis</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 text-sm border border-gray-300">GraphQL</span>
 </div>
 
 </div>
@@ -232,31 +206,29 @@ API haute performance gérant 10M+ requêtes/jour avec architecture microservice
 
 <div class="max-w-6xl mx-auto">
 
-<div class="fade-in">
 <h2 class="text-5xl md:text-6xl font-bold mb-16 text-black">Expérience</h2>
-</div>
 
 <div class="space-y-12">
 
-<div class="fade-in border-l-2 border-blue-400 pl-8 pb-8">
-<p class="text-sm text-blue-500 mb-2">2022 - Présent</p>
-<h3 class="text-2xl font-bold mb-1 text-black">Ingénieur Logiciel Senior</h3>
-<p class="text-lg text-gray-600 mb-3">TechCorp France</p>
-<p class="text-gray-700">Lead technique sur la migration cloud et l'architecture microservices.</p>
+<div class="border-l-2 border-blue-500 pl-8 pb-8">
+<p class="text-sm text-blue-600 mb-2">2022 - Présent</p>
+<h3 class="text-2xl font-bold mb-1 text-black">Ingénieur Logiciel</h3>
+<p class="text-lg text-gray-800 mb-3">TechCorp France</p>
+<p class="text-gray-800">Migration cloud et architecture systèmes.</p>
 </div>
 
-<div class="fade-in border-l-2 border-blue-400 pl-8 pb-8">
-<p class="text-sm text-blue-500 mb-2">2019 - 2022</p>
+<div class="border-l-2 border-blue-500 pl-8 pb-8">
+<p class="text-sm text-blue-600 mb-2">2019 - 2022</p>
 <h3 class="text-2xl font-bold mb-1 text-black">Ingénieur Développement</h3>
-<p class="text-lg text-gray-600 mb-3">DataSolutions</p>
-<p class="text-gray-700">Développement de pipelines de données et APIs backend haute performance.</p>
+<p class="text-lg text-gray-800 mb-3">DataSolutions</p>
+<p class="text-gray-800">Développement backend et APIs.</p>
 </div>
 
-<div class="fade-in border-l-2 border-blue-400 pl-8 pb-8">
-<p class="text-sm text-blue-500 mb-2">2017 - 2019</p>
+<div class="border-l-2 border-blue-500 pl-8 pb-8">
+<p class="text-sm text-blue-600 mb-2">2017 - 2019</p>
 <h3 class="text-2xl font-bold mb-1 text-black">Ingénieur Junior</h3>
-<p class="text-lg text-gray-600 mb-3">StartupLab</p>
-<p class="text-gray-700">Développement full-stack et automatisation des processus de déploiement.</p>
+<p class="text-lg text-gray-800 mb-3">StartupLab</p>
+<p class="text-gray-800">Full-stack et automatisation.</p>
 </div>
 
 </div>
@@ -268,19 +240,22 @@ API haute performance gérant 10M+ requêtes/jour avec architecture microservice
 
 <div class="max-w-4xl mx-auto text-center">
 
-<div class="fade-in">
 <h2 class="text-5xl md:text-6xl font-bold mb-6 text-black">Travaillons ensemble</h2>
-<p class="text-xl text-gray-700 mb-12">
-Disponible pour des projets freelance et opportunités à temps plein.
+
+<p class="text-xl text-gray-800 mb-12">
+Disponible pour opportunités et projets.
 </p>
-</div>
+
+<a href="mailto:contact@example.com" class="bg-blue-600 text-white px-8 py-4 inline-block">
+Contact
+</a>
 
 </div>
+
 </section>
 
-<!-- FOOTER -->
 <footer class="px-6 py-8 border-t border-gray-200">
-<div class="max-w-6xl mx-auto text-center text-gray-600">
+<div class="max-w-6xl mx-auto text-center text-gray-700">
 <p>© 2026 Maroua Cherif</p>
 </div>
 </footer>
